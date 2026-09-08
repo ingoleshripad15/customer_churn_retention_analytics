@@ -1,0 +1,42 @@
+we have to target this question for analysis:
+
+Your EDA Should Answer These Questions
+
+Don't try to create random graphs.
+
+By the end of this phase, we want answers to:
+
+Customer Behavior:
+What percentage of customers churn?
+How is tenure distributed?
+Are new customers more likely to churn?
+Does monthly spending differ between churned and retained customers?
+Subscription:
+Which contract type has the highest churn?
+Does internet service type affect churn?
+Which services are associated with lower/higher churn?
+Billing:
+Does payment method relate to churn?
+Do customers with higher charges churn more?
+Customer Profile:
+Does senior-citizen status relate to churn?
+Does having dependents/partners relate to churn?
+Business:
+Which customer groups are most at risk?
+Which characteristics are associated with high churn?
+
+These answers will eventually become the foundation for our retention strategy.
+-----------------------------------------------------------------------------------
+By analyzing histogram of tenure get to know that:
+- most around 1000 of customer are new (0 months)
+- most are long term customers also (50+ months)
+- many are with company's regular from various months
+- lowest tenure is between 30 - 40 months
+
+why used ask questions(important for analysis):
+pd.cut()
+pd.crosstab()
+
+from churn_by_tenure we get to know that:
+- 0-12 months customers churn most
+- 48-72 months cutomers churn less
